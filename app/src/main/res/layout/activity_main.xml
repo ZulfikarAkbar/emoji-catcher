@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".MainActivity">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Hello World!"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/title_game"
+        android:layout_width="603px"
+        android:layout_height="103px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/emoji_catcher"/>
+    <ImageButton
+        android:id="@+id/start_button"
+        android:layout_below="@+id/title_game"
+        android:background="@drawable/start_button"
+        android:text="Start"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:id="@+id/highscore_button"
+        android:layout_below="@+id/start_button"
+        android:background="@drawable/score_button"
+        android:text="HighScore"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageButton
+        android:id="@+id/sound"
+        android:layout_below="@+id/highscore_button"
+        android:background="@drawable/sound_on"
+        android:layout_marginTop="55dp"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_marginLeft="12dp"/>
+    <ImageButton
+        android:id="@+id/sound_off"
+        android:layout_below="@+id/highscore_button"
+        android:background="@drawable/sound_off"
+        android:layout_marginTop="53dp"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="75dp"/>
+    <ImageButton
+        android:id="@+id/help"
+        android:layout_below="@+id/highscore_button"
+        android:background="@drawable/help"
+        android:layout_marginTop="55dp"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_marginLeft="570dp"/>
+
+</RelativeLayout>

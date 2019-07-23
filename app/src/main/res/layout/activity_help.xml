@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".HelpActivity">
+    <ImageView
+        android:id="@+id/how_to_play_game"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/how_to_play"/>
+    <ImageButton
+        android:id="@+id/back_help"
+        android:layout_below="@+id/text_help"
+        android:background="@drawable/back"
+        android:layout_marginTop="60dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/text_help"
+        android:scrollbars = "vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/paragraph_help"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textAlignment="gravity"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
